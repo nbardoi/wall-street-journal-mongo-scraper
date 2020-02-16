@@ -1,0 +1,11 @@
+body {
+    background-color: grey;
+}
+.deleteNote {
+	display: inline-block;
+}
+
+.previousNotes {
+    display: inline-block;
+    width: 90%
+}

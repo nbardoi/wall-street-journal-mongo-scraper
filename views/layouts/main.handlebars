@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wall Street Journal Scraper</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <script src="/assets/js/app2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
+    
+
+</head>
+
+<body>
+    {{!-- Navbar --}}
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand mb-0 h1" href="/">WSJ Scraper</a>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="/">Home</a>
+                    <nav class="button-group">
+                    <a href="/saved"><button "btn btn-danger" id="viewSaved">View Saved Articles</button></a>
+                    <button class="btn btn-danger" id="scrape" data-toggle="modal">Scrape New Articles</button>
+                    </nav>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="jumbotron text-center background-image">
+            <div class="overlay">
+                <div class="caption">
+                    <h1 class="display-1 text-white">Mongo Scraper</h1>
+                    <h2 class="text-white">Wall Street Journal</h2>
+                </div>
+            </div>
+    </div>
+
+    <div>
+
+        {{{ body }}}
+
+    </div>
+
+</body>
+
+</html>
