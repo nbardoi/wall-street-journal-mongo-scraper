@@ -1,6 +1,7 @@
 body {
-    background-color: grey;
+    padding-top: 70px;
 }
+
 .deleteNote {
 	display: inline-block;
 }
@@ -8,4 +9,8 @@ body {
 .previousNotes {
     display: inline-block;
     width: 90%
+}
+
+#scrape {
+    margin: 8px 0px;
 }
