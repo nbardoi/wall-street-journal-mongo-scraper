@@ -85,7 +85,7 @@ app.get("/scrape", function(req, res) {
   // First, we grab the body of the html with request
   axios.get("https://www.wsj.com/news/us").then(function(response) {
     // Then, we load that into cheerio and save it to $ for a shorthand selector
-    var $ = cheerio.load(html);
+    var $ = cheerio.load(response.data);
     // Now, we grab every h2 within an article tag, and do the following:
     $("article").each(function(i, element) {
         
